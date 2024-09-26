@@ -1,0 +1,8 @@
+---
+- name: Gather Facts Playbook
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Print ansible_facts
+      debug:
+        var: ansible_facts
